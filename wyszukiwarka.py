@@ -127,7 +127,7 @@ def get_domain_from_url(url):
     try:
         parsed_url = urlparse(url)
         domain_parts = parsed_url.netloc.split('.')
-        # Tries to get the last two parts for the main domain (e.g., example.com)
+        # Tries to get the last two parts for the main domain
         if len(domain_parts) > 1:
             return '.'.join(domain_parts[-2:])
         return parsed_url.netloc
@@ -140,7 +140,6 @@ def get_domain_from_url(url):
 # =======================
 EMAIL_RE = re.compile(r"[a-zA-Z0-9.\-+_]+@[a-zA-Z0-9.\-+_]+\.[a-zA-Z]{2,}", re.I)
 ZIP_CODE_RE = re.compile(r"\b\d{2}-\d{3}\b")
-# General pattern for 9-digit numbers, possibly preceded by a country code and spaces/hyphens
 PHONE_RE = re.compile(r"(?:\+?\d{2}\s*)?(\d{3}[\s-]?\d{3}[\s-]?\d{3}|\d{9})")
 
 
@@ -207,7 +206,7 @@ def extract_contacts(html, base_url):
     for num in all_numbers:
         # The regex for PHONE_RE returns the 9-digit group
         clean_num = num.replace(" ", "").replace("-", "")
-        # Check if the number is NOT a zip code and has at least 9 digits (a basic filter)
+        # Check if the number is NOT a zip code and has at least 9 digits
         if not ZIP_CODE_RE.search(num) and len(clean_num) >= 9:
             phones.add(num)
 
@@ -327,7 +326,7 @@ def update_timer_and_counter():
     query_count = get_query_count()
     counter_label.config(text=f"Queries: {query_count}/100")
 
-    root.after(1000, update_timer_and_counter)  # Schedule next update
+    root.after(1000, update_timer_and_counter)
 
 
 def run_pipeline():
@@ -361,7 +360,7 @@ class ConsoleRedirect:
     def write(self, string):
         self.text_widget.config(state=tk.NORMAL)
         self.text_widget.insert(tk.END, string)
-        self.text_widget.see(tk.END)  # Scroll to the end
+        self.text_widget.see(tk.END)
         self.text_widget.config(state=tk.DISABLED)
 
     def flush(self):
