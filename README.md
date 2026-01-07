@@ -36,7 +36,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/MichalGrecer/Customer-Finder.git](https://github.com/MichalGrecer/Customer-Finder.git)
+   git clone https://github.com/MichalGrecer/regon_apk.git
    cd regon_apk
     ```
 2. **Install dependencies:**
