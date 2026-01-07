@@ -1,6 +1,6 @@
 # 🔍 Google Prospecting Tool
 
-### *Automatyzacja pozyskiwania leadów B2B przy użyciu Google Custom Search API.*
+### *Automating B2B Lead Acquisition using Google Custom Search API.*
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
 ![Tkinter](https://img.shields.io/badge/UI-Tkinter-green?style=for-the-badge)
@@ -9,64 +9,70 @@
 
 ---
 
-## 🌟 O projekcie
+## 🌟 About the Project
 
-**Google Prospecting Tool** to zaawansowana aplikacja desktopowa, która automatyzuje żmudny proces wyszukiwania kontaktów biznesowych. Program łączy wyniki wyszukiwania Google z silnikiem scrapującym, pozwalając na masowe pobieranie danych kontaktowych bezpośrednio do pliku Excel.
-
-
+**Google Prospecting Tool** is an advanced desktop application designed to automate the tedious process of searching for business contacts. The program merges Google search results with a powerful scraping engine, allowing for bulk extraction of contact data directly into an Excel file.
 
 ---
 
-## ✨ Kluczowe funkcje
+## ✨ Key Features
 
-* 🚀 **Masowe wyszukiwanie:** Wprowadzaj wiele fraz naraz, a program zajmie się resztą.
-* 📧 **Ekstrakcja kontaktów:** Automatyczne wykrywanie adresów e-mail oraz numerów telefonów na stronach internetowych.
-* 🌍 **Globalny zasięg:** Wybór spośród ponad 30 krajów i języków wyszukiwania (w tym Polska, UK, Niemcy).
-* 📊 **Eksport do Excela:** Wyniki są zapisywane w uporządkowanym pliku `.xlsx` z automatycznym usuwaniem duplikatów domen.
-* 🛡️ **Zarządzanie limitami API:** Wbudowany licznik zapytań (100/dobę) z automatycznym resetem o godzinie 9:00 rano.
-* 📜 **Historia wyszukiwania:** Podgląd poprzednich sesji i szybki dostęp do wygenerowanych plików.
+* 🚀 **Bulk Search:** Enter multiple search phrases at once and let the program handle the rest.
+* 📧 **Contact Extraction:** Automatically detects email addresses and phone numbers on target websites.
+* 🌍 **Global Reach:** Choose from over 30 countries and search languages (including Poland, UK, Germany, and more).
+* 📊 **Excel Export:** Results are saved in an organized `.xlsx` file with automatic domain de-duplication.
+* 🛡️ **API Limit Management:** Built-in query counter (100/day) with an automatic reset at 9:00 AM.
+* 📜 **Search History:** Preview previous sessions and gain quick access to generated files.
 
 ---
 
-## 🚀 Szybki Start
+## 🚀 Quick Start
 
-### Wymagania
-* Python 3.10 lub nowszy.
-* Własne klucze Google API (instrukcja poniżej).
+### Prerequisites
+* Python 3.10 or newer.
+* Personal Google API Credentials (see instructions below).
 
-### Instalacja
+### Installation
 
-1. **Klonowanie repozytorium:**
+1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/MichalGrecer/regon_apk.git](https://github.com/MichalGrecer/regon_apk.git)
-   cd regon_apk 
+   git clone [https://github.com/MichalGrecer/Customer-Finder.git](https://github.com/MichalGrecer/Customer-Finder.git)
+   cd regon_apk
     ```
-2. **Instalacja zależności**
+2. **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-3. **Uruchomienie programu:**
+3. **Run the program:**
     ```bash
     python wyszukiwarka.py
     ```
 
 ---
 
-## ⚙️ Konfiguracja Google API 
-Przy pierwszym uruchomieniu aplikacja poprosi o podanie:
+## ⚙️ Google API Configuration
+Upon the first launch, the application will prompt you to provide:
 
 1. **Google API Key**
 2. **Search Engine ID (CSE ID)**
 
-Dane te zostaną bezpiecznie zapisane lokalnie w pliku api_config.txt, więc nie musisz ich wpisywać ponownie.
+This data is securely saved locally in the api_config.txt file, so you won't need to enter it again.
 
 
 ---
 
 
-## 🖥️ Interfejs użytkownika
+## 🖥️ User Interface
 
-Aplikacja została zoptymalizowana do pracy w oknie o wymiarach 1120x720, co zapewnia wygodny podgląd zarówno parametrów wyszukiwania, jak i logów debugowania w konsoli.
+The application is optimized for a window size of 1120x720, providing a comfortable view of both search parameters and real-time debug logs in the console.
 
-* **Lewy panel:** Konfiguracja zapytań, wybór kraju i licznik limitów.
-* **Prawy panel:** Historia wyszukiwania oraz podgląd pracy skryptu w czasie rzeczywistym.
+* **Left Panel:** Query configuration, country selection, and limit tracking.
+* **Right Panel:** Search history and real-time script execution preview.
+
+## 📂 Project Structure
+
+* wyszukiwarka.py - Main source code.
+* Search_Results/ - Folder where your prospects.xlsx will be generated.
+* api_config.txt - (Generated) Stores your credentials.
+* query_counter.txt - (Generated) Tracks your daily 100-query limit.
+* search_history.txt - (Generated) Logs your search phrases.
