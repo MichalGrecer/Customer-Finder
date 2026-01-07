@@ -1,4 +1,4 @@
-# 🔍 Google Prospecting Tool
+# 🔍 B2B Lead Generator
 
 ### *Automating B2B Lead Acquisition using Google Custom Search API.*
 
