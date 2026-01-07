@@ -51,13 +51,18 @@
 ---
 
 ## ⚙️ Google API Configuration
-Upon the first launch, the application will prompt you to provide:
 
-1. **Google API Key**
-2. **Search Engine ID (CSE ID)**
+To ensure the program works correctly, you must have access to **Google Custom Search**. Upon the first launch, the application will prompt you for:
 
-This data is securely saved locally in the api_config.txt file, so you won't need to enter it again.
+### 1. Google API Key
+* Visit the [Google Cloud Console](https://console.cloud.google.com/).
+* Create a new project and enable the **"Custom Search API"**.
+* In the **"Credentials"** section, generate an API Key.
 
+### 2. CSE ID (Search Engine ID)
+* Visit the [Programmable Search Engine](https://programmablesearchengine.google.com/).
+* Create a new search engine and set it to **"Search the entire web"**.
+* Copy the generated **"Search engine ID"**.
 
 ---
 
