@@ -44,8 +44,8 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/MichalGrecer/regon_apk.git
-   cd regon_apk
+   git clone https://github.com/MichalGrecer/B2B-Lead-Generator
+   cd B2B-Lead-Generator
     ```
 2. **Install dependencies:**
     ```bash
