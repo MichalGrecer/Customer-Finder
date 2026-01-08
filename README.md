@@ -25,6 +25,14 @@
 * 📜 **Search History:** Preview previous sessions and gain quick access to generated files.
 
 ---
+### 🖼️ Visual Workflow
+
+| 1. API Configuration | 2. Real-time Scraping | 3. Final Output (Excel) |
+| :---: | :---: | :---: |
+| ![Setup](lead-generator.png) | ![Active Search](lead-generator2.png) | ![Excel Result](lead-generator3.png) |
+| *Secure modal for first-time API setup.* | *Live debug console and progress tracking.* | *Clean, structured data ready for outreach.* |
+
+---
 
 ## 🚀 Quick Start
 
